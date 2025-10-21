@@ -2,7 +2,7 @@
 #include<time.h>
 #include<stdlib.h>
 #include<unistd.h> 
-#include<windows.h> // for Gotoxy cursor function.
+#include<windows.h> // for Gotoxy cursor function. //2025 note: doesnt work with linux distros
 void gotoxy(int x ,int y)
 {
     COORD cordination = {x,y};
@@ -52,5 +52,6 @@ int main()
 		 system("cls"); // Removing the previous set of stars  
 
     } 
+
 
 }
